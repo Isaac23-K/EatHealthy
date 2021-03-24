@@ -31,14 +31,14 @@ public class Recipe extends AppCompatActivity {
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String recipes = ((TextView)view).getText().toString();
                 Toast.makeText(Recipe.this, recipes, Toast.LENGTH_LONG).show();
             }
         });
 
         Intent intent = getIntent();
-        String recipe = intent.getStringExtra("recipes");
+        String recipes = intent.getStringExtra("recipes");
         mRecipeTextView.setText("These are some of the recipes :" + recipes);
 
 
