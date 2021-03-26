@@ -26,9 +26,6 @@ public class Recipe extends AppCompatActivity {
         setContentView(R.layout.activity_recipes);
         ButterKnife.bind(this);
 
-//        mListView = (ListView) findViewById(R.id.listView);
-//        mRecipeTextView = (TextView) findViewById(R.id.RecipeEditText);
-
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, recipes);
         mListView.setAdapter(adapter);
 
