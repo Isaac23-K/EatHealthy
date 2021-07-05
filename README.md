@@ -20,4 +20,4 @@
 ## Copyright & License information 
 - Isaac Kaptoge 2021
 
-- MIT
+- MIT License 
